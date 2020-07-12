@@ -1,5 +1,74 @@
-.App {
+header .main-nav-wrapper {
+  background: rgb(19, 13, 13) !important;
+}
+
+header .header-inner {
+  min-height: 70px !important;
+  height: 70px !important;
+  border-bottom-width: 1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+header #main-navigation {
+  position: static;
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header #main-navigation {
+  margin-right: 20px;
+}
+
+.photo {
+  height : 550px;
+  width: 100%;
+}
+
+.sitebranding {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+header #main-navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+  font-size: 1.2rem;
+  background:none;
+  color: #fff;
+}
+
+.about {
+  margin-top: 30px;
+}
+
+.ant-menu-horizontal {
+  border-bottom: none;
+}
+
+.ant-menu-horizontal > .ant-menu-item-selected {
+  color : #fff;
+}
+
+.ant-menu-horizontal > .ant-menu-item a {
+  color : #fff;
+}
+
+.ant-carousel .slick-slide {
   text-align: center;
+  height: 550px;
+  line-height: 160px;
+  overflow: hidden;
+}
+
+.logo {
+  height : 60px;
 }
 
 .App-logo {

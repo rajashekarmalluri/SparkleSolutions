@@ -1,25 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { CssBaseline } from "@material-ui/core";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import 'bootstrap/dist/css/bootstrap.css';
+import 'antd/dist/antd.css';
 import './App.css';
 
-function App() {
+
+const App : React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <BrowserRouter>
+        <CssBaseline />
+        <Switch>
+          {/* <Route path="/" component={Login} exact={true}></Route> */}
+          <Route path="/" component={Home} exact={true}></Route>
+          <Route path="/about" component={About} exact={true}></Route>
+          <Route path="/offerings" component={Home} exact={true}></Route>
+          <Route path="/services" component={Home} exact={true}></Route>
+          <Route path="/team" component={Home} exact={true}></Route>
+          <Route path="/contact" component={Home} exact={true}></Route>
+        </Switch>
+      </BrowserRouter>
+    </React.Fragment>
   );
 }
 
