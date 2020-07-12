@@ -1,6 +1,15 @@
 import React from 'react';
 import Header from '../components/Header';
 import {Carousel} from 'antd';
+import image1 from './Image1.jpeg';
+import image2 from './Image2.jpeg';
+import image3 from './Image3.jpeg';
+import image4 from './Image4.jpeg';
+import image5 from './Image5.jpeg';
+import image6 from './Image6.jpeg';
+import image7 from './Image7.jpeg';
+import image8 from './Image8.jpeg';
+
 
 const Home : React.FC = () => {
     return (
@@ -8,28 +17,28 @@ const Home : React.FC = () => {
             <Header page = ""/>
             <Carousel autoplay>
                 <div>
-                    <img className="photo" src="./images/image1.jpeg" alt="image1"></img>
+                    <img className="photo" src={image1} alt="image1"></img>
                 </div>
                 <div>
-                    <img className="photo" src="./images/image2.jpeg" alt="image2"></img>
+                    <img className="photo" src={image2} alt="image2"></img>
                 </div>
                 <div>
-                    <img className="photo" src="./images/image3.jpeg" alt="image3"></img>
+                    <img className="photo" src={image3} alt="image3"></img>
                 </div>
                 <div>
-                    <img className="photo" src="./images/image4.jpeg" alt="image4"></img>
+                    <img className="photo" src={image4} alt="image4"></img>
                 </div>
                 <div>
-                    <img className="photo" src="./images/image5.jpeg" alt="image5"></img>
+                    <img className="photo" src={image5} alt="image5"></img>
                 </div>
                 <div>
-                    <img className="photo" src="./images/image6.jpeg" alt="image6"></img>
+                    <img className="photo" src={image6} alt="image6"></img>
                 </div>
                 <div>
-                    <img className="photo" src="./images/image7.jpeg" alt="image7"></img>
+                    <img className="photo" src={image7} alt="image7"></img>
                 </div>
                 <div>
-                    <img className="photo" src="./images/image8.jpeg" alt="image8"></img>
+                    <img className="photo" src={image8} alt="image8"></img>
                 </div>
             </Carousel>
         </React.Fragment>
