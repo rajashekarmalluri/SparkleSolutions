@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
-import { Card, CardContent, CardHeader, Typography } from "@material-ui/core";
+import { Card, CardContent, Typography } from "@material-ui/core";
 
 const About: React.FC = () => {
   return (
